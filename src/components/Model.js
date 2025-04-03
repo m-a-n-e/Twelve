@@ -6,7 +6,7 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 const Model = forwardRef(({ animationId = 0 }, ref) => {
-    const { scene, animations } = useGLTF("/public/models/scene-v1.glb");
+    const { scene, animations } = useGLTF("/models/scene-v1.glb");
     const internalRef = useRef();
     const modelRef = ref || internalRef; 
     const { actions, names } = useAnimations(animations, modelRef);

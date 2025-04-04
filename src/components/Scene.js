@@ -1,5 +1,7 @@
 'use client';
 
+import { EffectComposer, Bloom, Noise, SMAA } from "@react-three/postprocessing";
+
 import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 import Model from "@/components/Model";
@@ -12,7 +14,7 @@ export default function Scene({ animationId = 0 }) {
       gl={{ toneMapping: THREE.ACESFilmicToneMapping, outputColorSpace: THREE.SRGBColorSpace }}
     >
       <ambientLight intensity={1.2} />
-      
+
       <directionalLight
         position={[2, 5, 2]}
         intensity={3}
@@ -32,6 +34,26 @@ export default function Scene({ animationId = 0 }) {
       </mesh>
 
       <Model animationId={animationId} />
+
+      <EffectComposer>
+
+        <SMAA />
+
+        <Bloom
+          intensity={1.2}
+          luminanceThreshold={-4}
+          luminanceSmoothing={5}
+        />
+
+
+        <Noise
+          premultiply
+          opacity={0.04}
+        />
+
+
+
+      </EffectComposer>
     </Canvas>
   );
 }

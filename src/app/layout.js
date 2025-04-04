@@ -1,4 +1,5 @@
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 export const metadata = {
   title: "Conheça o robô Twelve",
@@ -8,7 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className="bg-purple-200 text-purple-950">
+      <body className="text-purple-950">
+        <NavBar />
         {children}
       </body>
     </html>

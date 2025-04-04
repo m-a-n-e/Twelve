@@ -20,7 +20,7 @@ export default function Overlay({ onClose }) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-            onClick={onClose} // clique fora
+            onClick={onClose}
         >
             <motion.div
                 className="relative p-8 w-screen h-screen bg-white/80 backdrop-blur-xl rounded-2xl shadow-xl"
@@ -32,7 +32,7 @@ export default function Overlay({ onClose }) {
                 >
                     <IoClose size={28} />
                 </button>
-                <div className="text-lg space-y-6 leading-relaxed mt-20 mx-10">
+                <div className="text-lg space-y-6 leading-relaxed mt-10 mx-10">
                     <div className="flex items-start gap-3">
                         <span className="font-black text-4xl text-purple-500">1.</span>
                         <p>
@@ -41,7 +41,7 @@ export default function Overlay({ onClose }) {
                                 href="https://sketchfab.com/3d-models/twelve-the-robot-low-poly-4170f970674f48b9932ff4a450564e51"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="ml-2 text-purple-950 underline hover:font-bold hover:text-purple-500 transition-all"
+                                className="ml-2 text-purple-950 underline hover:font-bold hover:text-purple-950 transition-all"
                             >
                                 Twelve - The Robot (Low Poly)
                             </a>.
@@ -72,13 +72,27 @@ export default function Overlay({ onClose }) {
                     <div className="flex items-start gap-3">
                         <span className="font-black text-4xl text-purple-500">5.</span>
                         <p>
-                            Conecte-se comigo no <strong>LinkedIn</strong> e explore outros projetos no <strong>GitHub</strong>!
+                            Conecte-se comigo no
+                            <a
+                                href="https://www.linkedin.com/in/emanueldoerner/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-2 text-purple-950 underline hover:font-bold hover:text-purple-950 transition-all"
+                            >
+                                LinkedIn
+                            </a>
+                            {" "}e explore outros projetos no
+                            <a
+                                href="https://github.com/m-a-n-e/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-2 text-purple-950 underline hover:font-bold hover:text-purple-950 transition-all"
+                            >
+                                GitHub
+                            </a>!
                         </p>
                     </div>
                 </div>
-
-
-
             </motion.div>
         </motion.div>
     );

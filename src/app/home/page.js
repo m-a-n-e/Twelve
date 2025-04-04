@@ -14,12 +14,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 flex space-x-3">
+      <div className="absolute bottom-15 flex space-x-3">
         {[0, 1, 2, 3].map((id) => (
           <button
             key={id}
             onClick={() => setOpcao(id)}
-            className={`p-4 border-4 font-bold rounded-lg transition 
+            className={`p-3 mx-2.5 border-4 font-bold rounded-lg transition 
               ${opcao === id
                 ? "bg-purple-950 text-white border-transparent"
                 : "hover:bg-purple-950 hover:text-white border-purple-950"}`}

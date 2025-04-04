@@ -10,7 +10,7 @@ export default function Scene({ animationId = 0 }) {
 
     return (
         <>
-            <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-40 flex items-center space-x-6">
+            <div className="text-purple-950 fixed top-10 left-1/2 transform -translate-x-1/2 z-40 flex items-center space-x-6">
                 <a
                     href="https://www.linkedin.com/in/emanueldoerner"
                     target="_blank"

@@ -1,0 +1,32 @@
+{
+  "name": "twelve",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.5",
+    "@react-three/fiber": "^9.1.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "framer-motion": "^12.5.0",
+    "next": "^15.2.3",
+    "npm": "^11.2.0",
+    "postprocessing": "^6.37.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-responsive": "^10.0.1",
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "tailwindcss": "^4"
+  }
+}
